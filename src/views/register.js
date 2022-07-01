@@ -21,7 +21,7 @@ const Register = () => {
           <input required id="password1" class="input-form" type="password" placeholder="Your password">
       </div>
       <div class="create-account-info">
-          <button id="create-account" class="main-btn" type="submit">Crear Cuenta</button>
+          <button id="create-account" class="main-btn" type="submit">Sign up</button>
       </div>
   </form>
   `;

@@ -3,12 +3,23 @@ import { Footer } from '../utils/footer.js';
 import {
   editPost, deletePost, profilePosts, likingPost,
 } from '../firebase/firestore.js';
+import { auth } from '../firebase/init.js';
 import movieIcon from '../img/movie-icon.svg';
+
 
 const Profile = () => {
   const container = document.createElement('div');
   container.className = 'profile-page';
   const userUid = localStorage.getItem('userUid');
+  const userPhoto = auth.currentUser.photoURL;
+  const userName = localStorage.getItem('userName');
+  const profileIntro = document.createElement('div');
+
+  const template = `
+  <div>
+  <h1 class="userName">${userName}<h1>
+  </div>`
+
   profilePosts(userUid, (post) => {
     container.innerHTML = '';
     let postStructure = '';
@@ -59,10 +70,12 @@ const Profile = () => {
      <!--MODAL-->  
     `;
     });
-
+    
+    profileIntro.innerHTML = template;
     const middle = document.createElement('div');
     middle.className = 'middle';
     middle.innerHTML = postStructure;
+    middle.prepend(profileIntro);
     container.append(Header(), middle, Footer());
 
     const editBtn = container.querySelectorAll('.btn-Edit');
