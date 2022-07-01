@@ -3,6 +3,7 @@ import { Footer } from '../utils/footer.js';
 import {
   editPost, deletePost, profilePosts, likingPost,
 } from '../firebase/firestore.js';
+import movieIcon from '../img/movie-icon.svg';
 
 const Profile = () => {
   const container = document.createElement('div');
@@ -14,7 +15,8 @@ const Profile = () => {
 
     post.forEach((doc) => {
       const posts = doc.data();
-      postStructure += `
+      postStructure += // HTML
+      `
       <div class="post"> 
         <div class='post-header'>
         <p class='user-info'><img class="user-photo" src="${posts.photo}">
@@ -23,8 +25,11 @@ const Profile = () => {
         <p class="date">${posts.date.toDate().toLocaleString()}</p>
       </div>
       <div class="post-main"> 
+      <img src="${movieIcon}" class="movie-img">   
+      <div class="movie-info">
         <div class="movie-title">${posts.movie}</div>
-        <p class='movie-country'>Country: ${posts.country} </p>
+        <p class='movie-country'>${posts.country} </p>
+      </div>
       </div>
       <div class="post-footer-profile">
       <button class='btn-Edit' data-id='${doc.id}'><i class="fas fa-edit"></i></button>

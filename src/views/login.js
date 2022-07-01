@@ -18,8 +18,8 @@ const Login = () => {
             </div>
         </div>
         <div id="login-btns" class="login-btns">
-            <button id="log-in" class="main-btn" type="submit">Entrar</button>
-            <p class="or">Or?</p>
+            <button id="log-in" class="main-btn" type="submit">Sign in</button>
+            <p class="or">Or</p>
             <button id="google-btn" class="google-btn">Sign In with Google</button>
         </div>
     </form>

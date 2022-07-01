@@ -9,11 +9,11 @@ export const Footer = () => {
     <i class="fas fa-question"></i>
   </button>
   <dialog class="infoModal">
-  <button id="dicardButtonInfo" class="btn-discard">x</button>
+  <button id="discardButtonInfo" class="btn-discard">x</button>
   <h1 class="brand-name">JunkTube</h1>
   <h3 class="brand-slogan">Travel through films!</h3>
-  <h2 class="brand-intro">Truly unique. Usually whimsy 🤩</h2>
-  <h3 class="brand-info">Share film locations around the world. Inpire others to visit!</h3>
+  <h3 class="brand-slogan">Truly unique. Usually whimsy</h2>
+  <h3 class="brand-slogan">Share film locations around the world. Inspire others to visit!</h3>
   </dialog>
   `;
 
@@ -40,7 +40,7 @@ export const Footer = () => {
     infoModal.showModal();
   });
 
-  const discardModal = container.querySelector('#dicardButtonInfo');
+  const discardModal = container.querySelector('#discardButtonInfo');
   discardModal.addEventListener('click', () => {
     infoModal.close();
   });
