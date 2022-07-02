@@ -1,6 +1,7 @@
 import { Header } from '../utils/header.js';
 import { Footer } from '../utils/footer.js';
 import { likingPost, likedPosts } from '../firebase/firestore.js';
+import movieIcon from '../img/movie-icon.svg';
 
 const Liked = () => {
   const container = document.createElement('div');
@@ -18,17 +19,21 @@ const Liked = () => {
 
     post.forEach((doc) => {
       const posts = doc.data();
-      postStructure += `
-      <div class="post-liked">
+      postStructure += // HTML
+      `
+      <div class="post">
         <div class='post-header'>
           <p class='user-info'><img class="user-photo" src="${posts.photo}">
           <span class="user-name">${posts.userName} posted: </span> </p>
           <p class="movie-review">${posts.review}</p>
           <p class="date">${posts.date.toDate().toLocaleString()}</p>
         </div>
-        <div class="post-main">       
+        <div class="post-main">    
+        <img src="${movieIcon}" class="movie-img">  
+        <div class="movie-info"> 
           <div class="movie-title">${posts.movie}</div>
           <p class='movie-country'>Country: ${posts.country} </p>
+        </div>
         </div>
         <div class="post-footer">
           <button class="btn-like" data-id="${doc.id}">

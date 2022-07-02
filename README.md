@@ -1,24 +1,12 @@
-# JunkTube
+# Project Social Network
 
-¿Alguna vez has pensado en visitar alguna ciudad o país, y te hubiese encantado encontrar un documental o película filmada en algunas de sus avenidas emblemáticas para envolverte en la cultura y cotidianidad de la época? ¡Bienvenid@ a JunkTube, tu nueva red social favorita! 
+## Description
 
-Intercambia reviews y opiniones de películas y documentales según su locación de filmación. El objetivo es compartir e inspirar a otros a visitar los lugares representados.
-## Usuarios
+'Social Network' is an app to exchange reviews and recommendations of movies and documentaries according to their filming location. The goal is to share and inspire others to visit the places depicted. In this social network, you can create a post, edit and delete it; you can also like other users' posts. You can Sign up with you email and password or Google. You can see all the posts in the main feed, and you can visit your profile to see all your posts. The app also has a map view, where you can search for posts by choosing a country on the map.
+## Target user
 
-Amantes del cine y viajeros, que buscan una referencia visual de los lugares que quieren vistar, así como intercambiar sus opiniones sobre dichas películas o documentales. 
-## Diseño de la Interfaz de Usuario:
-### Prototipo en alta:
-Realizamos el prototipado en la plataforma Figma, en la cual definimos nuestra paleta de colores inicial y estilo visual de la app, así como las vistas finales que se presentarían al usuario: vista de home, vista de perfil, y vista de historial de likes.
+Film lovers and travelers, looking for a visual reference of the places they want to visit. People who want to share opinions and recommendations of movies and documentaries filmed in a certain place in the world.
 
-<b>Vistas Log-In/Sign Out, y Feed:</b>
-![Prototype-High-Quality](/src/img/prototipo-alta1.png)
+## Usage
 
-<b>Vistas Feed, interacción en Feed y Perfil Usuario:</b>
-![Prototype-High-Quality](/src/img/prototipo-alta2.png)
-
-<b>Vista Geolocalización y Post:</b>
-![Prototype-High-Quality](/src/img/prototipo-alta3.png)
-
-<b>Prototipo Versión Escritorio:</b>
-![Prototype-High-Quality](/src/img/prototipo-alta4.png)
-
+<img src="./socialnetwork-usage.gif">
