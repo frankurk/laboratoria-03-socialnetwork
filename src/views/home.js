@@ -1,7 +1,7 @@
 import { Header } from '../utils/header.js';
 import { Footer } from '../utils/footer.js';
 import {
-  readingPost, editPost, deletePost, likingPost,
+  readingPost, likingPost,
 } from '../firebase/firestore.js';
 import movieIcon from '../img/movie-icon.svg';
 

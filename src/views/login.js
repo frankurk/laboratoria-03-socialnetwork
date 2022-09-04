@@ -3,7 +3,8 @@ import { navigate, next } from '../router/router';
 import logoUrl from '../img/brand-logo.png';
 
 const Login = () => {
-  const template = `
+  const template = //HTML
+  `
     <img src='${logoUrl}' id="logo" class="logo">
     <h2 class="title-form">JunkTube</h2>
     <form id="form" class="form">
@@ -49,16 +50,16 @@ const Login = () => {
       form.reset();
       navigate('/home');
     } catch (error) {
-      if (error === 'auth/invalid-email') {
-        alert('Ingresa un correo válido: ejemplo@hotmail.com');
-      } else if (error === 'auth/missing-email') {
-        alert('Debes ingresar un correo');
+      if (error === "auth/invalid-email") {
+        alert("Please enter a valid email: example@mail.com");
+      } else if (error === "auth/missing-email") {
+        alert("Please enter a valid email");
       } else if (error === 'auth/internal-error') {
-        alert('Debes llenar todos los campos');
+        alert("Please fill in all required fields");
       } else if (error === 'auth/wrong-password') {
-        alert('Contraseña incorrecta');
+        alert("Wrong password");
       } else if (error === 'auth/user-not-found') {
-        alert('Ups! aún no tienes cuenta, regístrate');
+        alert("Ups! You don't have an account");
       }
     }
   });
@@ -79,7 +80,7 @@ const Login = () => {
       localStorage.setItem('userPhoto', user.photoURL);
       navigate('/home');
     } else {
-      console.log('falló tu conexión con google');
+      console.log('Something went wrong. Please try again.');
     }
   });
 

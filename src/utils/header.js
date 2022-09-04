@@ -1,12 +1,14 @@
 import { navigate } from '../router/router.js';
 import { out } from '../firebase/auth.js';
 import logoUrl from '../img/brand-logo.png';
+import userPhoto from '../img/main-avatar-1.png';
 
 export const Header = () => {
   const userName = localStorage.getItem('userName') || 'User';
-  const userPhoto = localStorage.getItem('userPhoto');
-  const template = `
-  <img class='brand-logo' src='${logoUrl}' />
+  //const userPhoto = localStorage.getItem('userPhoto');
+  const template = // HTML
+    `
+  <img class="brand-logo" src="${logoUrl}" />
   <div class="search-box">
       <input type="text" class="search-input" placeholder="Search..">
       <button class="search-button"><i class="fas fa-search"></i></button>

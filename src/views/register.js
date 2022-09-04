@@ -4,7 +4,8 @@ import { navigate } from '../router/router.js';
 import logoUrl from '../img/brand-logo.png';
 
 const Register = () => {
-  const template = `
+  const template = //HTML
+  `
   <img src='${logoUrl}' id="logo" class="logo">
   <h2 class="signup-tittle">JunkTube</h2>
   <p>Create your account</p>

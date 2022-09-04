@@ -2,11 +2,13 @@ import { navigate } from '../router/router.js';
 import { Header } from '../utils/header.js';
 import { Footer } from '../utils/footer.js';
 import { createPost } from '../firebase/firestore.js';
+import userPhoto from '../img/main-avatar.png';
 
 const Post = () => {
   const userName = localStorage.getItem('userName') || 'User';
-  const userPhoto = localStorage.getItem('userPhoto');
-  const template = `
+  //const userPhoto = localStorage.getItem('userPhoto');
+  const template = //HTML
+  `
   <div class="post-box">
     <button id="dicardButton" class="btn-discard">x</button>
     <form id="postBox">
