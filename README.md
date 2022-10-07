@@ -7,6 +7,6 @@
 
 Film lovers and travelers, looking for a visual reference of the places they want to visit. People who want to share opinions and recommendations of movies and documentaries filmed in a certain place in the world.
 
-## Usage
+## Demo
 
 <img src="./socialnetwork-usage.gif">
